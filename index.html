@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Max Finch is a computer science student at the University of Georgia building shipped mobile apps, web tools, and computer-vision projects."
+    />
+    <title>Max Finch | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="home">
+    <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+    <aside class="side-dock" aria-label="Page navigation">
+      <a class="dock-link" href="index.html" aria-label="Home" data-page-link="home">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="m3 10 9-7 9 7"></path>
+          <path d="M5 9.5V21h14V9.5"></path>
+          <path d="M9 21v-7h6v7"></path>
+        </svg>
+      </a>
+      <a class="dock-link" href="projects.html" aria-label="Projects" data-page-link="projects">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="3" y="3" width="7" height="7"></rect>
+          <rect x="14" y="3" width="7" height="7"></rect>
+          <rect x="3" y="14" width="7" height="7"></rect>
+          <rect x="14" y="14" width="7" height="7"></rect>
+        </svg>
+      </a>
+      <a class="dock-link" href="resume.html" aria-label="Resume" data-page-link="resume">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M8 3h8l4 4v14H4V3h4z"></path>
+          <path d="M16 3v5h4"></path>
+          <path d="M8 13h8"></path>
+          <path d="M8 17h5"></path>
+        </svg>
+      </a>
+      <a class="dock-link" href="about.html" aria-label="About" data-page-link="about">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20 21a8 8 0 0 0-16 0"></path>
+          <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+      </a>
+      <a class="dock-link" href="contact.html" aria-label="Contact" data-page-link="contact">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="3" y="5" width="18" height="14"></rect>
+          <path d="m3 7 9 6 9-6"></path>
+        </svg>
+      </a>
+    </aside>
+
+    <main class="site-shell home-shell">
+      <nav class="top-nav">
+        <a class="brand" href="index.html" aria-label="Max Finch home">
+          <span class="brand-mark">MF</span>
+          <span>Max Finch</span>
+        </a>
+        <div class="nav-links" aria-label="Primary navigation">
+          <a href="projects.html" data-page-link="projects">Projects</a>
+          <a href="resume.html" data-page-link="resume">Resume</a>
+          <a href="about.html" data-page-link="about">About</a>
+          <a href="contact.html" data-page-link="contact">Contact</a>
+        </div>
+      </nav>
+
+      <section class="hero home-hero" aria-labelledby="intro-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Computer Science - UGA</p>
+          <h1 id="intro-title">Max Finch</h1>
+          <p class="intro compact-intro">
+            CS student building shipped mobile apps, web tools, and computer-vision projects.
+          </p>
+          <div class="actions" aria-label="Portfolio actions">
+            <a class="button primary" href="projects.html">View Projects</a>
+            <a class="button secondary" href="assets/max-finch-resume.pdf" download>Resume PDF</a>
+          </div>
+        </div>
+
+        <div class="identity-panel" aria-label="Profile summary">
+          <p class="panel-label">Overview</p>
+          <h2>CS student with a builder's mindset</h2>
+          <p>
+            I study computer science at UGA after earlier coursework at UC Denver, with experience across mobile apps,
+            backend integration, systems coursework, and hackathon-style product building.
+          </p>
+          <div class="stat-grid" aria-label="Quick stats">
+            <div>
+              <strong>UGA</strong>
+              <span>computer science</span>
+            </div>
+            <div>
+              <strong>Mobile</strong>
+              <span>React Native + SwiftUI</span>
+            </div>
+            <div>
+              <strong>Backend</strong>
+              <span>Firebase + Flask</span>
+            </div>
+            <div>
+              <strong>Global</strong>
+              <span>US / EU background</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-pages" aria-label="Explore pages">
+        <a class="page-card" href="projects.html">
+          <span>01</span>
+          <strong>Projects</strong>
+          <p>Shipped apps, hackathon builds, and class projects.</p>
+        </a>
+        <a class="page-card" href="resume.html">
+          <span>02</span>
+          <strong>Resume</strong>
+          <p>Education, skills, involvement, and work experience.</p>
+        </a>
+        <a class="page-card" href="about.html">
+          <span>03</span>
+          <strong>About</strong>
+          <p>Background, interests, and what I like building.</p>
+        </a>
+        <a class="page-card" href="contact.html">
+          <span>04</span>
+          <strong>Contact</strong>
+          <p>Email, LinkedIn, resume, and a quick message form.</p>
+        </a>
+      </section>
+    </main>
+
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

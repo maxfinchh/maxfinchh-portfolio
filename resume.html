@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume | Max Finch</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="resume">
+    <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+    <aside class="side-dock" aria-label="Page navigation">
+      <a class="dock-link" href="index.html" aria-label="Home" data-page-link="home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7"></path><path d="M5 9.5V21h14V9.5"></path><path d="M9 21v-7h6v7"></path></svg></a>
+      <a class="dock-link" href="projects.html" aria-label="Projects" data-page-link="projects"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg></a>
+      <a class="dock-link" href="resume.html" aria-label="Resume" data-page-link="resume"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3h8l4 4v14H4V3h4z"></path><path d="M16 3v5h4"></path><path d="M8 13h8"></path><path d="M8 17h5"></path></svg></a>
+      <a class="dock-link" href="about.html" aria-label="About" data-page-link="about"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21a8 8 0 0 0-16 0"></path><circle cx="12" cy="7" r="4"></circle></svg></a>
+      <a class="dock-link" href="contact.html" aria-label="Contact" data-page-link="contact"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14"></rect><path d="m3 7 9 6 9-6"></path></svg></a>
+    </aside>
+
+    <main class="site-shell page-shell">
+      <nav class="top-nav">
+        <a class="brand" href="index.html"><span class="brand-mark">MF</span><span>Max Finch</span></a>
+        <div class="nav-links" aria-label="Primary navigation">
+          <a href="projects.html" data-page-link="projects">Projects</a>
+          <a href="resume.html" data-page-link="resume">Resume</a>
+          <a href="about.html" data-page-link="about">About</a>
+          <a href="contact.html" data-page-link="contact">Contact</a>
+        </div>
+      </nav>
+
+      <header class="page-header split-heading">
+        <div>
+          <p class="eyebrow">Experience</p>
+          <h1>Resume</h1>
+          <p>Education, coursework, skills, clubs, and work experience.</p>
+        </div>
+        <a class="button compact" href="assets/max-finch-resume.pdf" download>Download PDF</a>
+      </header>
+
+      <section class="resume-layout">
+        <article class="timeline-card">
+          <h2>Education</h2>
+          <div class="timeline-item">
+            <div>
+              <h3>University of Georgia</h3>
+              <p>B.S. Computer Science</p>
+            </div>
+            <time>Spring 2025 - present</time>
+          </div>
+          <div class="timeline-item">
+            <div>
+              <h3>University of Colorado Denver</h3>
+              <p>B.S. Computer Science coursework</p>
+            </div>
+            <time>2021 - 2024</time>
+          </div>
+        </article>
+
+        <article class="timeline-card">
+          <h2>Technical Skills</h2>
+          <div class="skill-groups">
+            <div><h3>Languages</h3><p>C++, Java, Python, Assembly, Swift, JavaScript</p></div>
+            <div><h3>Tools</h3><p>GitHub, Kali Linux, Visual Studio, Unity, Blender, Node.js, Matlab</p></div>
+            <div><h3>Systems</h3><p>Windows, Unix, macOS, CentOS</p></div>
+          </div>
+        </article>
+
+        <article class="timeline-card wide-card">
+          <h2>Relevant Coursework</h2>
+          <p class="muted-copy">
+            Java Software Development, Systems Programming, Theory of Computing, Data Structures, Algorithms, Android
+            App Development, Object-Oriented Programming, Logic Design, Systems Administration, Intro Web Development,
+            Discrete Math, and Calculus I/II.
+          </p>
+        </article>
+
+        <article class="timeline-card wide-card">
+          <h2>Involvement</h2>
+          <div class="timeline-item">
+            <div>
+              <h3>CodeHub Club</h3>
+              <p>Participating in coding workshops, collaborative projects, networking events, and technical talks.</p>
+            </div>
+            <time>2025 - present</time>
+          </div>
+          <div class="timeline-item">
+            <div>
+              <h3>UGA Hacks Club</h3>
+              <p>Building with teams through hackathons, coding challenges, and mentor-driven problem solving.</p>
+            </div>
+            <time>2025 - present</time>
+          </div>
+        </article>
+
+        <article class="timeline-card wide-card">
+          <h2>Work During School</h2>
+          <div class="timeline-item">
+            <div><h3>Endive Catering</h3><p>Setup and food service at private catered events in Atlanta.</p></div>
+            <time>2023 - present</time>
+          </div>
+          <div class="timeline-item">
+            <div><h3>PMC Valet Parking</h3><p>Valet parking in downtown Denver for Hilton and Homewood Suites.</p></div>
+            <time>2023 - 2024</time>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
