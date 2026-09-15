@@ -217,14 +217,22 @@ textarea {
 .hero-headshot {
   display: block;
   width: clamp(88px, 10vw, 112px);
-  height: auto;
-  aspect-ratio: 1;
+  height: clamp(88px, 10vw, 112px);
   margin-bottom: 24px;
   border: 2px solid var(--line);
   border-radius: 50%;
-  object-fit: cover;
-  object-position: center 15%;
+  overflow: hidden;
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.24);
+}
+
+.hero-headshot img {
+  display: block;
+  width: calc(100% + 6px);
+  max-width: none;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transform: translateX(-6px);
 }
 
 .eyebrow,
@@ -803,6 +811,29 @@ h1 {
 
 .timeline-item:first-of-type {
   margin-top: 6px;
+}
+
+.education-item {
+  flex-wrap: wrap;
+  gap: 12px 20px;
+}
+
+.school-identity {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  min-width: 0;
+}
+
+.school-logo {
+  display: block;
+  flex: 0 0 40px;
+  width: 40px;
+  height: 40px;
+  padding: 3px;
+  border-radius: 6px;
+  background: #fff;
+  object-fit: contain;
 }
 
 .timeline-item h4 {
