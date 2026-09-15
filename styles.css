@@ -214,6 +214,19 @@ textarea {
   padding-top: 18px;
 }
 
+.hero-headshot {
+  display: block;
+  width: clamp(88px, 10vw, 112px);
+  height: auto;
+  aspect-ratio: 1;
+  margin-bottom: 24px;
+  border: 2px solid var(--line);
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 15%;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.24);
+}
+
 .eyebrow,
 .panel-label,
 .card-kicker {
